@@ -6,14 +6,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="25dp"
+    android:padding="16dp"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:fontFamily="monospace"
+        android:text="Informe seu sexo :"/>
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:padding="8dp"
-        android:id="@+id/spinner"/>
+        android:id="@+id/spinner" />
 
     <EditText
         android:layout_width="match_parent"
@@ -21,21 +29,41 @@
         android:padding="8dp"
         android:hint="informe sua idade"
         android:id="@+id/TextIdade"
-        android:inputType="number"/>
+        android:digits="0123456789"
+        android:maxLength="2"
+        android:fontFamily="monospace"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:text="Calcular"
-        android:id="@+id/ButtonCalcular"/>
+        android:id="@+id/ButtonCalcular"
+        android:fontFamily="monospace"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF0000"
+        android:drawableLeft="@drawable/outline_arrow_right_24"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginVertical="20dp"
+        android:paddingHorizontal="20dp"
         android:id="@+id/TextViewResultado"
         android:gravity="center"
+        android:inputType="number"
         tools:text="Resultado"
-        android:textSize="16sp"/>
+        android:background="#e5e5e5"
+        android:fontFamily="monospace"
+        android:textColor="#a1a1a1"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/baseline_access_time_filled_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Lorran Calazans Meneguelli"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="monospace"/>
 
 </LinearLayout>
